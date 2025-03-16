@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core brand colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryLight">#BB86FC</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryDark">#018786</color>
+
+    <!-- Text and background colors -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorOnBackground">#212121</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Text colors -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorTertiary">#BDBDBD</color>
+    <color name="textColorLink">#0288D1</color>
+    <color name="textColorInverse">#FFFFFF</color>
+
+    <!-- Dark theme colors -->
+    <color name="darkColorPrimary">#BB86FC</color>
+    <color name="darkColorPrimaryDark">#9965F4</color>
+    <color name="darkColorAccent">#03DAC6</color>
+    <color name="darkColorSurface">#121212</color>
+    <color name="darkColorOnSurface">#E0E0E0</color>
+    <color name="darkColorBackground">#1E1E1E</color>
+    <color name="darkColorOnBackground">#E0E0E0</color>
+    <color name="darkColorError">#CF6679</color>
+
+    <!-- Status colors -->
+    <color name="status_ongoing">#4CAF50</color>
+    <color name="status_completed">#2196F3</color>
+    <color name="status_hiatus">#FF9800</color>
+    <color name="status_dropped">#F44336</color>
+    <color name="status_not_started">#9E9E9E</color>
+    <color name="status_reading">#8BC34A</color>
+    <color name="status_plan_to_read">#03A9F4</color>
+    <color name="status_on_hold">#FFC107</color>
+
+    <!-- Reader theme colors -->
+    <color name="reader_light_background">#FFFFFF</color>
+    <color name="reader_light_text">#212121</color>
+    <color name="reader_dark_background">#303030</color>
+    <color name="reader_dark_text">#E0E0E0</color>
+    <color name="reader_sepia_background">#FBF0D9</color>
+    <color name="reader_sepia_text">#5B4636</color>
+    <color name="reader_black_background">#000000</color>
+    <color name="reader_black_text">#AAAAAA</color>
+
+    <!-- Search highlight colors -->
+    <color name="search_highlight">#66FFEB3B</color>
+    <color name="search_highlight_current">#66FF9800</color>
+
+    <!-- Chip colors -->
+    <color name="chip_background_selected">#E0E0E0</color>
+    <color name="chip_background_unselected">#FFFFFF</color>
+    <color name="chip_stroke_selected">@color/colorPrimary</color>
+    <color name="chip_stroke_unselected">#CCCCCC</color>
+
+    <!-- Filter colors -->
+    <color name="filter_selected">@color/colorPrimary</color>
+    <color name="filter_unselected">#BDBDBD</color>
+
+    <!-- Progress colors -->
+    <color name="progress_background">#DDDDDD</color>
+    <color name="progress_reading">#4CAF50</color>
+    <color name="progress_buffering">#FFC107</color>
+
+    <!-- Rating colors -->
+    <color name="rating_active">#FFC107</color>
+    <color name="rating_inactive">#D6D6D6</color>
+
+    <!-- Library colors -->
+    <color name="library_unread_badge">#F44336</color>
+    <color name="library_new_chapter_badge">#4CAF50</color>
+    <color name="library_in_progress_badge">#2196F3</color>
+
+    <!-- Border and divider colors -->
+    <color name="divider">#E0E0E0</color>
+    <color name="border_light">#E0E0E0</color>
+    <color name="border_dark">#424242</color>
+
+    <!-- Shadow colors -->
+    <color name="shadow">#33000000</color>
+    <color name="shadow_dark">#66000000</color>
+
+    <!-- Scrim colors -->
+    <color name="scrim_start">#99000000</color>
+    <color name="scrim_center">#66000000</color>
+    <color name="scrim_end">#00000000</color>
+
+    <!-- Ripple colors -->
+    <color name="ripple_light">#33000000</color>
+    <color name="ripple_dark">#33FFFFFF</color>
+
+    <!-- Notification colors -->
+    <color name="notification_background">#F5F5F5</color>
+    <color name="notification_accent">#2196F3</color>
+
+    <!-- Bookmark colors -->
+    <color name="bookmark_active">#F44336</color>
+    <color name="bookmark_inactive">#BDBDBD</color>
+
+    <!-- Download colors -->
+    <color name="download_progress">#2196F3</color>
+    <color name="download_complete">#4CAF50</color>
+    <color name="download_error">#F44336</color>
+
+    <!-- Chart colors -->
+    <color name="chart_color1">#2196F3</color>
+    <color name="chart_color2">#4CAF50</color>
+    <color name="chart_color3">#FFC107</color>
+    <color name="chart_color4">#F44336</color>
+    <color name="chart_color5">#9C27B0</color>
+
+    <!-- Transparent colors for overlays -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+
+    <!-- State colors -->
+    <color name="pressed_state_dark">#44FFFFFF</color>
+    <color name="pressed_state_light">#44000000</color>
+    <color name="focused_state_dark">#22FFFFFF</color>
+    <color name="focused_state_light">#22000000</color>
+
+    <!-- System colors -->
+    <color name="system_red">#F44336</color>
+    <color name="system_green">#4CAF50</color>
+    <color name="system_blue">#2196F3</color>
+    <color name="system_yellow">#FFEB3B</color>
+    <color name="system_orange">#FF9800</color>
+    <color name="system_purple">#9C27B0</color>
+    <color name="system_teal">#009688</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="font_size_options">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+    <string-array name="font_families">
+        <item>Default</item>
+        <item>Serif</item>
+        <item>Sans-Serif</item>
+        <item>Monospace</item>
+        <item>Roboto</item>
+        <item>OpenSans</item>
+        <item>Merriweather</item>
+        <item>Lora</item>
+        <item>RobotoMono</item>
+    </string-array>
+</resources>

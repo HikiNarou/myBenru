@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <!-- Home navigation -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mybenru.app.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_novel_detail_fragment"
+            app:destination="@id/navigation_novel_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_home_fragment_to_novel_list_fragment"
+            app:destination="@id/navigation_novel_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_home_fragment_to_reader_fragment"
+            app:destination="@id/navigation_reader"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_home_fragment_to_explore_fragment"
+            app:destination="@id/navigation_explore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_home_fragment_to_settings_fragment"
+            app:destination="@id/navigation_settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Library navigation -->
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.mybenru.app.ui.library.LibraryFragment"
+        android:label="@string/title_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_library_fragment_to_novel_detail_fragment"
+            app:destination="@id/navigation_novel_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_library_fragment_to_reader_fragment"
+            app:destination="@id/navigation_reader"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Explore navigation -->
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.mybenru.app.ui.explore.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_explore_fragment_to_novel_detail_fragment"
+            app:destination="@id/navigation_novel_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_explore_fragment_to_novel_list_fragment"
+            app:destination="@id/navigation_novel_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_explore_fragment_to_source_list_fragment"
+            app:destination="@id/navigation_source_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_explore_fragment_to_category_list_fragment"
+            app:destination="@id/navigation_category_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="sourceId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <!-- Novel Detail -->
+    <fragment
+        android:id="@+id/navigation_novel_detail"
+        android:name="com.mybenru.app.ui.novel.NovelDetailFragment"
+        android:label="@string/novel_details"
+        tools:layout="@layout/fragment_novel_detail">
+        <argument
+            android:name="novelId"
+            app:argType="string" />
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_novel_detail_fragment_to_reader_fragment"
+            app:destination="@id/navigation_reader"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_novel_detail_fragment_self"
+            app:destination="@id/navigation_novel_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Novel List -->
+    <fragment
+        android:id="@+id/navigation_novel_list"
+        android:name="com.mybenru.app.ui.novel.NovelListFragment"
+        tools:layout="@layout/fragment_novel_list">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="listType"
+            app:argType="string" />
+        <argument
+            android:name="categoryId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="sourceId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_novel_list_fragment_to_novel_detail_fragment"
+            app:destination="@id/navigation_novel_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Reader -->
+    <fragment
+        android:id="@+id/navigation_reader"
+        android:name="com.mybenru.app.ui.reader.ReaderFragment"
+        android:label="@string/reader"
+        tools:layout="@layout/fragment_reader">
+        <argument
+            android:name="novelId"
+            app:argType="string" />
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <argument
+            android:name="chapterId"
+            app:argType="string" />
+        <argument
+            android:name="chapterNumber"
+            app:argType="integer" />
+        <argument
+            android:name="novelTitle"
+            app:argType="string" />
+        <argument
+            android:name="chapterTitle"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_reader_fragment_to_reader_settings_fragment"
+            app:destination="@id/navigation_reader_settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_reader_fragment_to_chapter_list_fragment"
+            app:destination="@id/navigation_chapter_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Reader Settings -->
+    <dialog
+        android:id="@+id/navigation_reader_settings"
+        android:name="com.mybenru.app.ui.reader.ReaderSettingsDialogFragment"
+        android:label="@string/reader_settings"
+        tools:layout="@layout/fragment_reader_settings" />
+
+    <!-- Chapter List -->
+    <dialog
+        android:id="@+id/navigation_chapter_list"
+        android:name="com.mybenru.app.ui.reader.ChapterListDialogFragment"
+        android:label="@string/chapter_list"
+        tools:layout="@layout/fragment_chapter_list">
+        <argument
+            android:name="novelId"
+            app:argType="string" />
+        <argument
+            android:name="currentChapterId"
+            app:argType="string" />
+    </dialog>
+
+    <!-- Source List -->
+    <fragment
+        android:id="@+id/navigation_source_list"
+        android:name="com.mybenru.app.ui.source.SourceListFragment"
+        android:label="@string/sources"
+        tools:layout="@layout/fragment_source_list">
+        <action
+            android:id="@+id/action_source_list_fragment_to_explore_fragment"
+            app:destination="@id/navigation_explore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- Category List -->
+    <fragment
+        android:id="@+id/navigation_category_list"
+        android:name="com.mybenru.app.ui.explore.CategoryListFragment"
+        android:label="@string/browse_categories"
+        tools:layout="@layout/fragment_category_list">
+        <action
+            android:id="@+id/action_category_list_fragment_to_novel_list_fragment"
+            app:destination="@id/navigation_novel_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="sourceId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <!-- Settings -->
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.mybenru.app.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settings_fragment_to_about_fragment"
+            app:destination="@id/navigation_about"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_settings_fragment_to_appearance_settings_fragment"
+            app:destination="@id/navigation_appearance_settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_settings_fragment_to_reader_default_settings_fragment"
+            app:destination="@id/navigation_reader_default_settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_settings_fragment_to_storage_settings_fragment"
+            app:destination="@id/navigation_storage_settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_settings_fragment_to_backup_restore_fragment"
+            app:destination="@id/navigation_backup_restore"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_settings_fragment_to_help_fragment"
+            app:destination="@id/navigation_help"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <!-- About -->
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.mybenru.app.ui.settings.AboutFragment"
+        android:label="@string/about_app"
+        tools:layout="@layout/fragment_about" />
+
+    <!-- Appearance Settings -->
+    <fragment
+        android:id="@+id/navigation_appearance_settings"
+        android:name="com.mybenru.app.ui.settings.AppearanceSettingsFragment"
+        android:label="@string/appearance"
+        tools:layout="@layout/fragment_appearance_settings" />
+
+    <!-- Reader Default Settings -->
+    <fragment
+        android:id="@+id/navigation_reader_default_settings"
+        android:name="com.mybenru.app.ui.settings.ReaderDefaultSettingsFragment"
+        android:label="@string/reader_settings"
+        tools:layout="@layout/fragment_reader_default_settings" />
+
+    <!-- Storage Settings -->
+    <fragment
+        android:id="@+id/navigation_storage_settings"
+        android:name="com.mybenru.app.ui.settings.StorageSettingsFragment"
+        android:label="@string/storage_and_cache"
+        tools:layout="@layout/fragment_storage_settings" />
+
+    <!-- Backup & Restore -->
+    <fragment
+        android:id="@+id/navigation_backup_restore"
+        android:name="com.mybenru.app.ui.settings.BackupRestoreFragment"
+        android:label="@string/backup_and_restore"
+        tools:layout="@layout/fragment_backup_restore" />
+
+    <!-- Help & Feedback -->
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.mybenru.app.ui.settings.HelpFragment"
+        android:label="@string/help_and_feedback"
+        tools:layout="@layout/fragment_help" />
+
+    <!-- Global actions that can be called from deep links -->
+    <action
+        android:id="@+id/action_global_novel_detail"
+        app:destination="@id/navigation_novel_detail" />
+
+    <action
+        android:id="@+id/action_global_reader"
+        app:destination="@id/navigation_reader" />
+
+</navigation>

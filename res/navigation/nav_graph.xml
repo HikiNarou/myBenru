@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mybenru.app.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_libraryFragment"
+            app:destination="@id/libraryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_novelListFragment"
+            app:destination="@id/novelListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.mybenru.app.ui.library.LibraryFragment"
+        android:label="@string/title_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.mybenru.app.ui.explore.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_exploreFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_sourceListFragment"
+            app:destination="@id/sourceListFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/novelDetailFragment"
+        android:name="com.mybenru.app.ui.details.NovelDetailFragment"
+        android:label="Novel Details"
+        tools:layout="@layout/fragment_novel_detail">
+        <argument
+            android:name="novelId"
+            app:argType="string" />
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_novelDetailFragment_to_readerFragment"
+            app:destination="@id/readerFragment" />
+        <action
+            android:id="@+id/action_novelDetailFragment_self"
+            app:destination="@id/novelDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/readerFragment"
+        android:name="com.mybenru.app.ui.reader.ReaderFragment"
+        android:label="Reader"
+        tools:layout="@layout/fragment_reader">
+        <argument
+            android:name="novelId"
+            app:argType="string" />
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <argument
+            android:name="chapterId"
+            app:argType="string" />
+        <argument
+            android:name="chapterNumber"
+            app:argType="integer" />
+        <argument
+            android:name="novelTitle"
+            app:argType="string" />
+        <argument
+            android:name="chapterTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_readerFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mybenru.app.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/sourceListFragment"
+        android:name="com.mybenru.app.ui.source.SourceListFragment"
+        android:label="Sources"
+        tools:layout="@layout/fragment_source_list">
+        <action
+            android:id="@+id/action_sourceListFragment_to_sourceDetailFragment"
+            app:destination="@id/sourceDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sourceDetailFragment"
+        android:name="com.mybenru.app.ui.source.SourceDetailFragment"
+        android:label="Source Details"
+        tools:layout="@layout/fragment_source_detail">
+        <argument
+            android:name="sourceId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_sourceDetailFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/novelListFragment"
+        android:name="com.mybenru.app.ui.novels.NovelListFragment"
+        android:label="Novel List"
+        tools:layout="@layout/fragment_novel_list">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="listType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_novelListFragment_to_novelDetailFragment"
+            app:destination="@id/novelDetailFragment" />
+    </fragment>
+
+</navigation>

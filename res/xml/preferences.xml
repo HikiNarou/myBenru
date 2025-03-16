@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Display">
+        <SwitchPreferenceCompat
+            android:key="dark_mode"
+            android:title="Dark Mode"
+            android:summary="Enable dark theme for the app" />
+        <ListPreference
+            android:key="font_size"
+            android:title="Font Size"
+            android:entries="@array/font_size_options"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="medium"
+            android:summary="Select font size for reading" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="General">
+        <Preference
+            android:key="about"
+            android:title="About"
+            android:summary="Information about myBen-ru app" />
+    </PreferenceCategory>
+</PreferenceScreen>

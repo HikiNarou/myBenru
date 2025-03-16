@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">MyBenru</string>
+
+    <!-- Bottom navigation titles -->
+    <string name="title_home">Home</string>
+    <string name="title_library">Library</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Common actions -->
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="refresh">Refresh</string>
+    <string name="share">Share</string>
+    <string name="ok">OK</string>
+    <string name="done">Done</string>
+    <string name="close">Close</string>
+    <string name="back">Back</string>
+    <string name="retry">Retry</string>
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Reset</string>
+    <string name="open_in_browser">Open in browser</string>
+
+    <!-- Home screen -->
+    <string name="continue_reading">Continue Reading</string>
+    <string name="recent_novels">Recent Novels</string>
+    <string name="popular_novels">Popular Novels</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="view_all">View All</string>
+    <string name="welcome_message">Welcome to MyBenru</string>
+    <string name="daily_updates">Daily Updates</string>
+    <string name="recently_updated">Recently Updated</string>
+    <string name="browse_categories">Browse Categories</string>
+
+    <!-- Library screen -->
+    <string name="my_library">My Library</string>
+    <string name="reading">Reading</string>
+    <string name="completed">Completed</string>
+    <string name="on_hold">On Hold</string>
+    <string name="plan_to_read">Plan to Read</string>
+    <string name="dropped">Dropped</string>
+    <string name="all">All</string>
+    <string name="library_empty_message">Your library is empty</string>
+    <string name="add_novels_to_library">Add novels to your library</string>
+    <string name="library_filter_all">All</string>
+    <string name="library_filter_unread">Unread</string>
+    <string name="library_filter_reading">Reading</string>
+    <string name="library_filter_completed">Completed</string>
+    <string name="library_filter_updates">New Updates</string>
+    <string name="remove_filter">Remove Filter</string>
+
+    <!-- Explore screen -->
+    <string name="browse_novels">Browse Novels</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="new_releases">New Releases</string>
+    <string name="weekly_top">Weekly Top</string>
+    <string name="monthly_top">Monthly Top</string>
+    <string name="completed_novels">Completed Novels</string>
+    <string name="search_novels">Search novels</string>
+    <string name="search_placeholder">Title, author, or keywords</string>
+    <string name="no_results_found">No results found</string>
+    <string name="try_different_keywords">Try different keywords</string>
+    <string name="explore_categories">Explore Categories</string>
+
+    <!-- Novel details -->
+    <string name="novel_details">Novel Details</string>
+    <string name="description">Description</string>
+    <string name="author">Author</string>
+    <string name="status">Status</string>
+    <string name="genres">Genres</string>
+    <string name="tags">Tags</string>
+    <string name="chapters">Chapters</string>
+    <string name="add_to_library">Add to Library</string>
+    <string name="in_library">In Library</string>
+    <string name="start_reading">Start Reading</string>
+    <string name="chapter_list">Chapter List</string>
+    <string name="related_novels">Related Novels</string>
+    <string name="similar_novels">Similar Novels</string>
+    <string name="reviews">Reviews</string>
+    <string name="comments">Comments</string>
+    <string name="no_chapters_available">No chapters available</string>
+    <string name="no_reviews_available">No reviews available</string>
+    <string name="no_related_novels">No related novels found</string>
+    <string name="last_updated">Last updated: %s</string>
+    <string name="rating">Rating: %.1f</string>
+    <string name="view_details">View Details</string>
+    <string name="info">Info</string>
+    <string name="chapters_count">Chapters (%d)</string>
+    <string name="cover_image">Cover image</string>
+    <string name="novel_added_to_library">Novel added to library</string>
+    <string name="novel_removed_from_library">Novel removed from library</string>
+    <string name="remove_from_library">Remove from Library</string>
+    <string name="remove_from_library_confirmation">Are you sure you want to remove "%s" from your library?</string>
+    <string name="remove">Remove</string>
+    <string name="share_novel">Share Novel</string>
+    <string name="share_novel_text">Check out this novel: %1$s by %2$s\n%3$s</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="download">Download</string>
+    <string name="go_to_last_read">Go to last read chapter</string>
+    <string name="more_options">More options</string>
+    <string name="mark_as_read">Mark as read</string>
+    <string name="mark_as_unread">Mark as unread</string>
+
+    <!-- Chapter selection -->
+    <string name="select_all">Select All</string>
+    <string name="invert_selection">Invert Selection</string>
+    <string name="selection_count">%d selected</string>
+    <string name="no_chapters_selected">No chapters selected</string>
+    <string name="download_progress">%1$d of %2$d</string>
+    <string name="download_complete_message">Downloaded %d chapters</string>
+    <string name="open_chapters_to_download">Open chapters tab to download</string>
+
+    <!-- Reader -->
+    <string name="reader">Reader</string>
+    <string name="chapter">Chapter</string>
+    <string name="next_chapter">Next Chapter</string>
+    <string name="previous_chapter">Previous Chapter</string>
+    <string name="loading_chapter">Loading chapter…</string>
+    <string name="no_chapter_content">No content available for this chapter</string>
+    <string name="first_chapter">First Chapter</string>
+    <string name="last_chapter">Last Chapter</string>
+    <string name="chapter_navigation">Chapter Navigation</string>
+    <string name="reader_settings">Reader Settings</string>
+    <string name="text_size">Text Size</string>
+    <string name="decrease_text_size">Decrease text size</string>
+    <string name="increase_text_size">Increase text size</string>
+    <string name="line_spacing">Line Spacing</string>
+    <string name="decrease_line_spacing">Decrease line spacing</string>
+    <string name="increase_line_spacing">Increase line spacing</string>
+    <string name="theme">Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="sepia">Sepia</string>
+    <string name="black">Black</string>
+    <string name="font_family">Font Family</string>
+    <string name="text_alignment">Text Alignment</string>
+    <string name="left">Left</string>
+    <string name="center">Center</string>
+    <string name="right">Right</string>
+    <string name="justified">Justified</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="landscape_mode">Landscape Mode</string>
+    <string name="keep_screen_on">Keep Screen On</string>
+    <string name="use_system_brightness">Use System Brightness</string>
+    <string name="auto_scroll">Auto Scroll</string>
+    <string name="scroll_speed">Scroll Speed</string>
+    <string name="search_in_chapter">Search in Chapter</string>
+    <string name="previous_result">Previous Result</string>
+    <string name="next_result">Next Result</string>
+
+    <!-- Sources -->
+    <string name="sources">Sources</string>
+    <string name="add_source">Add Source</string>
+    <string name="add_source_description">Enter the URL of a valid novel source</string>
+    <string name="source_url">Source URL</string>
+    <string name="common_sources">Common Sources</string>
+    <string name="source_icon">Source icon</string>
+    <string name="delete_source">Delete source</string>
+    <string name="search_sources">Search sources</string>
+    <string name="no_sources">No Sources</string>
+    <string name="no_sources_message">Add a source to start discovering novels</string>
+    <string name="no_sources_found">No Sources Found</string>
+    <string name="no_sources_found_message">Try with a different search term</string>
+    <string name="category_image">Category image</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="general">General</string>
+    <string name="appearance">Appearance</string>
+    <string name="notifications">Notifications</string>
+    <string name="storage_and_cache">Storage &amp; Cache</string>
+    <string name="backup_and_restore">Backup &amp; Restore</string>
+    <string name="about_app">About App</string>
+    <string name="help_and_feedback">Help &amp; Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="language">Language</string>
+    <string name="automatic_updates">Automatic Updates</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="theme_description">Choose how the app looks</string>
+    <string name="current_theme">Current theme:</string>
+    <string name="notifications_description">Get notified when novels are updated</string>
+    <string name="automatic_updates_description">Automatically check for new chapters</string>
+    <string name="language_description">Change application language</string>
+    <string name="current_language">Current language:</string>
+    <string name="storage_description">Manage stored data and cache</string>
+    <string name="cache_size">Cache size:</string>
+    <string name="backup_description">Backup and restore your library and settings</string>
+    <string name="about_app_description">Information about the application</string>
+    <string name="help_description">Get help or report issues</string>
+    <string name="privacy_description">Read our privacy policy</string>
+    <string name="terms_description">Read our terms of service</string>
+    <string name="empty_state">Empty state</string>
+    <string name="no_results">No results</string>
+    <string name="version">Version</string>
+    <string name="app_version">App version: %s</string>
+    <string name="build_number">Build: %s</string>
+    <string name="developer">Developer</string>
+    <string name="contact_email">Contact: support@mybenru.com</string>
+    <string name="website">Website: mybenru.com</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="rate_app">Rate App</string>
+    <string name="licenses">Open Source Licenses</string>
+
+    <!-- Error messages -->
+    <string name="error_loading_novel">Failed to load novel details</string>
+    <string name="error_loading_chapters">Failed to load chapters</string>
+    <string name="error_loading_content">Failed to load chapter content</string>
+    <string name="error_network">Network error. Please check your connection</string>
+    <string name="error_server">Server error. Please try again later</string>
+    <string name="error_parsing">Error parsing data</string>
+    <string name="error_unknown">An unknown error occurred</string>
+    <string name="failed_to_open_link">Failed to open link</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="connection_restored">Connection restored</string>
+    <string name="download_error">Download failed</string>
+    <string name="backup_error">Backup failed</string>
+    <string name="restore_error">Restore failed</string>
+    <string name="login_error">Login failed</string>
+    <string name="registration_error">Registration failed</string>
+
+    <!-- Filters -->
+    <string name="filter_by">Filter by</string>
+    <string name="filter_status">Status</string>
+    <string name="filter_genre">Genre</string>
+    <string name="filter_sort">Sort by</string>
+    <string name="sort_latest">Latest</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_alphabetical">A-Z</string>
+    <string name="sort_reverse_alphabetical">Z-A</string>
+    <string name="sort_rating">Rating</string>
+    <string name="sort_popularity">Popularity</string>
+    <string name="reset_filters">Reset Filters</string>
+
+    <!-- Status indicators -->
+    <string name="status_ongoing">Ongoing</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_hiatus">Hiatus</string>
+    <string name="status_dropped">Dropped</string>
+    <string name="status_not_started">Not Started</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_novel_cover">Cover for %s</string>
+    <string name="accessibility_increase_text_size">Increase text size</string>
+    <string name="accessibility_decrease_text_size">Decrease text size</string>
+    <string name="accessibility_search_button">Search</string>
+    <string name="accessibility_settings_button">Settings</string>
+    <string name="accessibility_bookmark_button">Bookmark chapter</string>
+    <string name="accessibility_download_button">Download chapter</string>
+    <string name="accessibility_next_chapter">Next chapter</string>
+    <string name="accessibility_previous_chapter">Previous chapter</string>
+    <string name="accessibility_chapter_list">Chapter list</string>
+    <string name="accessibility_more_options">More options</string>
+
+    <!-- Account and User -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="account">Account</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_twitter">Login with Twitter</string>
+    <string name="login_required">Login Required</string>
+    <string name="please_login">Please login to use this feature</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+
+    <!-- Reading progress -->
+    <string name="reading_progress">Reading Progress</string>
+    <string name="read">Read</string>
+    <string name="unread">Unread</string>
+    <string name="reading_time">%d min read</string>
+    <string name="words">%d words</string>
+    <string name="pages">%d pages</string>
+    <string name="chapter_progress">Chapter %1$d of %2$d</string>
+    <string name="progress_percentage">%d%%</string>
+    <string name="reading_history">Reading History</string>
+    <string name="reading_stats">Reading Stats</string>
+    <string name="total_reading_time">Total Reading Time</string>
+    <string name="novels_completed">Novels Completed</string>
+    <string name="chapters_read">Chapters Read</string>
+    <string name="words_read">Words Read</string>
+
+    <!-- Dialogs and notifications -->
+    <string name="notification_new_chapter">New Chapter</string>
+    <string name="notification_update">Update Available</string>
+    <string name="notification_download_complete">Download Complete</string>
+    <string name="confirm">Confirm</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="cannot_undo">This action cannot be undone</string>
+    <string name="exit_without_saving">Exit without saving?</string>
+    <string name="discard_changes">Discard Changes</string>
+    <string name="continue_editing">Continue Editing</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+
+    <!-- Bookmarks and notes -->
+    <string name="bookmarks">Bookmarks</string>
+    <string name="add_bookmark">Add Bookmark</string>
+    <string name="edit_bookmark">Edit Bookmark</string>
+    <string name="delete_bookmark">Delete Bookmark</string>
+    <string name="notes">Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="bookmark_name">Bookmark Name</string>
+    <string name="note_content">Note Content</string>
+
+    <!-- History and downloads -->
+    <string name="history">History</string>
+    <string name="clear_history">Clear History</string>
+    <string name="downloads">Downloads</string>
+    <string name="manage_downloads">Manage Downloads</string>
+    <string name="delete_all_downloads">Delete All Downloads</string>
+    <string name="download_all">Download All</string>
+    <string name="download_selected">Download Selected</string>
+    <string name="delete_selected_downloads">Delete Selected</string>
+    <string name="pause_all_downloads">Pause All</string>
+    <string name="resume_all_downloads">Resume All</string>
+    <string name="download_paused">Download Paused</string>
+    <string name="download_pending">Download Pending</string>
+    <string name="download_failed">Download Failed</string>
+    <string name="download_completed">Download Completed</string>
+    <string name="no_novels_in_category">No novels in category</string>
+    <string name="popular_in_category">Popular in category</string>
+    <string name="results_for">Results for</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="oops_nothing_here">Oops nothing here</string>
+    <string name="empty_state_message">Empty state message</string>
+    <string name="no_results_message">No results message</string>
+</resources>
