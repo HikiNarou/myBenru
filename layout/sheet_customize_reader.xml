@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/customize_info"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/text_head"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="10dp"
+            android:text="@string/set_the_font_size"
+            android:textColor="?colorOnSurface"
+            android:textSize="@dimen/text_med" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/font_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image"
+            android:valueFrom="10"
+            android:valueTo="50" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="10dp"
+        android:text="@string/set_the_theme"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/text_med" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reader_theme_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
